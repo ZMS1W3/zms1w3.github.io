@@ -1,0 +1,119 @@
+#titulo {
+    border-style: solid; /*Tipo de borde*/
+    border-color: blue; /*color*/
+    border-radius: 10px; /*Redondeado*/
+    border-width: 5px; /*Ancho*/
+}
+
+p.texto {
+    color:slateblue /*Las classes van con punto*/
+}
+
+p.especial {
+    color:green
+}
+
+div p {
+    color:blue
+}
+
+div h2, div h3 {
+    color:rgb(31, 248, 121) /*rgb para tener colores mas personalizados*/
+}
+
+* { /* el simbolo * es para seleccionar todos*/
+    font-size: 24px;
+/*    color: black; */
+}
+
+#fondo {
+    background-color: rgba(255, 0, 0, 0.24);
+    background-image: url("coffee.png");
+    background-size: contain;
+    height: 100px 100px; /*Altura, segundo valor el Ancho*/ /*Width es un ancho*/
+    background-repeat: no-repeat; /*para que no se repita la imagen*/ /*No repeat Y y X para vertical y horizontal*/
+    background-position: center; /*para que se quede centrado, left, right,top y bottom*/
+}
+.margen {
+    background-color: chocolate;
+    margin:15px; /*El primero es el margen arriba, derecha, abajo, left */
+    padding:30px 20px 10px 5px; /*Para aumentar el espacio entre el contenido y el borde*/
+    border: solid 1px black; /*Tipo de borde, color, ancho*/
+    outline: 1px solid red; /*para darle un borde al elemento*/
+    /*Overflow es para quitar lo que este fuera de elemento cambiandolo a hidden o visible,
+     con "scroll" podemos hacer que el elemento se pueda ver moviendo el palito parecido al que siempre sale a la derecha de el navegador cuando es muy grande para abajo
+     */
+}
+.text {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center; /*Texto centrado*/
+/*text-decoration: ;*/ /*Decoracion de texto*/
+text-shadow: 5px 6px 5px; /*Sombra de texto*/
+}
+a:link {
+    color: blueviolet
+}
+a:visited {
+    color : green
+}
+a:hover {
+    color: red
+}
+a:active {
+    color: yellow
+}
+ul {
+    background-color: blue;
+    list-style-type: none; /*Para que no se vea el punto al inicio numero de la lista*/ /*none, disc, square, circle.  Esos son todos los estilos*/
+    padding-left:0 ; /*Para eliminar el padding de los puntos*/
+    list-style-position: inside; /*Para que los puntos se vean dentro de la lista*/ /* no se bien para que sirve pero te lo ordena mas*/
+}
+table {
+    width: 50%; /*Ancho de la tabla*/
+    border-collapse:collapse; /*Para que no se vea el borde entre las celdas*/ /*solo el table*/
+}
+th, td {
+    border: solid 1px black; /*Tipo de borde, color, ancho*/
+    padding: 5px; /*Padding de la tabla*/
+    text-align: center; /*Texto centrado*/
+}
+th {
+    background-color: #4CAF50; /*Color de fondo de la cabecera*/
+    color: white; /*Color de texto de la cabecera*/
+}
+tr:hover {
+    background-color: #615b5b; /*Color de fondo al pasar el mouse por encima de la fila*/
+    cursor: pointer; /*Cursor del mouse*/
+}
+/*tr:nth-child(even)     (odd   o   even)Par o no par*/
+tr:nth-child(even) {
+    background-color: #f50000;
+}
+span {
+    display: block; /*Para que se vea el texto en una sola linea (Abajo)*/
+    width: 300px; /*Ancho de la linea*/
+    max-width: 400px; /*Ancho maximo de la linea*/
+    background-color: red; /*Color de fondo de la linea*/
+    /*display: none; para hacer desaparecer un elemento*/
+    /*visibility: hidden; oculta un elemento*/
+    /*visibility: visible; muestra un elemento*/
+
+}
+.inline{
+    display: inline; /*Para que se vea el texto en una sola linea (En la misma linea)*/
+    /*display inline-block se le puede asignar un alto y ancho.etc*/
+}
+#pos {
+    /*position:relative;*/ /*Modificar posicion*/
+    /*position:sticky; es una mescla pero si hay top baja cono un fixed*/
+    position:fixed; /*Para que se vea en relacion al explorador o mejor explicado si bajas el (X) se mueve tambien. se sigue, se mueve con la pantalla*/
+    left: 210px;
+    top: 5px /*top es abajo*/
+}
+.lef {
+        float: left; /*cambia de lado a la derecha*/
+        width: 120px;
+}
+.rig {
+        float: right; /*cambia de lado a la izquierda*/
+}
