@@ -1,1 +1,1 @@
-# https://zms1w3.github.io/index
+# https://zms1w3.github.io
